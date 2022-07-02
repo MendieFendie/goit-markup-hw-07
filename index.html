@@ -15,40 +15,39 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
     />
     <title>WebStudio</title>
-    <link rel="stylesheet" href="./css/style.css" />
     <link rel="stylesheet" href="./css/main.min.css">
   </head>
   <body>
     <header class="header">
       <div class="container">
         <a href="/" class="logo link"
-          >Web<span class="logo-text">Studio</span></a
+          >Web<span class="logo__text">Studio</span></a
         >
-        <nav class="header-nav">
-          <ul class="header-list list">
-            <li class="header-item">
-              <a href="./index.html" class="header-link current link">Студия</a>
+        <nav class="nav">
+          <ul class="menu list">
+            <li class="menu__item">
+              <a href="./index.html" class="menu__link current link">Студия</a>
             </li>
-            <li class="header-item">
-              <a href="./portfolio.html" class="header-link link">Портфолио</a>
+            <li class="menu__item">
+              <a href="./portfolio.html" class="menu__link link">Портфолио</a>
             </li>
-            <li class="header-item">
-              <a href="" class="header-link link">Контакты</a>
+            <li class="menu__item">
+              <a href="" class="menu__link link">Контакты</a>
             </li>
           </ul>
         </nav>
         <ul class="contacts list">
           <li>
-            <a class="link" href="mailto:info@devstudio.com">
-              <svg width="16" height="12" class="contacts-icon">
+            <a class="contacts__link link" href="mailto:info@devstudio.com">
+              <svg width="16" height="12" class="contacts__icon">
                 <use href="./images/icons.svg#icon-mail"></use>
               </svg>
               info@devstudio.com</a
             >
           </li>
-          <li class="header-tel">
-            <a class="link" href="tel:+380961111111">
-              <svg width="10" height="12" class="contacts-icon">
+          <li class="contacts__tel">
+            <a class="contacts__link link" href="tel:+380961111111">
+              <svg width="10" height="12" class="contacts__icon">
                 <use href="./images/icons.svg#icon-telephone"></use></svg
               >+38 096 111 11 11</a
             >
@@ -60,8 +59,8 @@
     <main>
       <section class="hero">
         <div class="container">
-          <h1 class="hero-title">Эффективные решения для вашего бизнеса</h1>
-          <button type="button" class="hero-btn" data-modal-open>
+          <h1 class="hero__title">Эффективные решения для вашего бизнеса</h1>
+          <button type="button" class="hero__btn" data-modal-open>
             Заказать услугу
           </button>
         </div>

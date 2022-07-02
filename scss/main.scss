@@ -1,9 +1,21 @@
 @import "./utils/vars";
-
-@import "./base/reset";
-
 @import "./utils/hidden";
 
+@import "./base/reset";
+@import "./base/common";
+
 @import "./components/container";
+@import "./components/section";
 
 @import "./layouts/header";
+@import "./layouts/hero";
+@import "./layouts/benefits";
+@import "./layouts/about";
+@import "./layouts/team";
+@import "./layouts/clients";
+@import "./layouts/footer";
+@import "./layouts/join";
+@import "./layouts/modal";
+@import "./layouts/form";
+@import "./layouts/buttons";
+@import "./layouts/exemple";
