@@ -235,7 +235,7 @@ body {
   background-color: var(--accent-color);
 }
 
-.benefits {
+.benefits__benefits-list {
   margin-bottom: -94px;
 }
 
@@ -244,11 +244,11 @@ body {
   flex-wrap: wrap;
 }
 
-.benefits-item {
+.benefits-list__item {
   width: 270px;
 }
 
-.benefits-graphic {
+.benefits-list__graphic {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -260,15 +260,11 @@ body {
   margin-bottom: 30px;
 }
 
-.benefits-headline {
-  visibility: hidden;
-}
-
-.benefits-item:not(:last-child) {
+.benefits-list__item:not(:last-child) {
   margin-right: 30px;
 }
 
-.benefits-title {
+.benefits-list__title {
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
@@ -278,7 +274,7 @@ body {
   margin-bottom: 10px;
 }
 
-.benefits-text {
+.benefits-list__text {
   font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
@@ -286,7 +282,7 @@ body {
   color: var(--text-color);
 }
 
-.about-title {
+.about__title {
   font-weight: 700;
   font-size: 36px;
   line-height: 1.17;
@@ -301,14 +297,14 @@ body {
   justify-content: space-between;
 }
 
-.about-item {
+.about-list__item {
   position: relative;
 }
-.about-item:not(:last-child) {
+.about-list__item:not(:last-child) {
   margin-right: 30px;
 }
 
-.about-name {
+.about-list__name {
   font-style: normal;
   font-weight: 700;
   font-size: 14px;
@@ -334,7 +330,7 @@ body {
   background-color: #f5f4fa;
 }
 
-.team-title {
+.team__title {
   font-family: "Roboto";
   font-style: normal;
   font-weight: 700;
@@ -350,33 +346,33 @@ body {
   display: flex;
 }
 
-.team-item {
+.team-list__item {
   border-radius: 0px 0px 4px 4px;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   background-color: var(--hero-color);
 }
-.team-item:not(:last-child) {
+.team-list__item:not(:last-child) {
   margin-right: 30px;
 }
 
-.team-soc-list {
+.soc-list {
   display: flex;
   justify-content: center;
 }
 
-.team-soc-item {
+.soc-list__item {
   width: 44px;
   height: 44px;
 }
-.team-soc-item:not(:first-child) {
+.soc-list__item:not(:first-child) {
   margin-left: 10px;
 }
 
-.team-soc-ico {
+.soc-list__ico {
   fill: var(--button-no-active-color);
 }
 
-.team-soc-link {
+.soc-list__link {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -387,18 +383,18 @@ body {
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-.team-soc-link:hover, .team-soc-link:focus {
+.soc-list__link:hover, .soc-list__link:focus {
   background-color: var(--accent-color);
 }
-.team-soc-link:hover .team-soc-ico, .team-soc-link:focus .team-soc-ico {
+.soc-list__link:hover .team-soc-ico, .soc-list__link:focus .team-soc-ico {
   fill: var(--additional-text-color);
 }
 
-.team-member {
+.team-card {
   padding: 30px;
 }
 
-.team-name {
+.team-card__name {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.14;
@@ -408,7 +404,7 @@ body {
   margin-bottom: 10px;
 }
 
-.team-position {
+.team-card__position {
   font-size: 16px;
   line-height: 1.14;
   text-align: center;
