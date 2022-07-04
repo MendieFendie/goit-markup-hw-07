@@ -8,11 +8,15 @@
   background-position: center;
   background-size: cover;
   max-width: 1600px;
-  margin: 0 auto;
+
   background-color: #2f303a;
   text-align: center;
+}
+
+.main__hero {
   padding-top: 200px;
   padding-bottom: 200px;
+  margin: 0 auto;
 }
 
 .hero__title {
