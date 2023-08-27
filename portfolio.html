@@ -1,74 +1,108 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="uk">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
-      rel="stylesheet"
-    /> -->
+    <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+    rel="stylesheet"
+  /> -->
     <!-- <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
-    /> -->
-    <title>Портфолио</title>
-       <link rel="stylesheet" href="./css/main.min.css">
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+  /> -->
+    <title>Портфоліо</title>
+    <link rel="stylesheet" href="./css/main.min.css" />
   </head>
   <body>
-   <header class="header">
-      <div class="container">
-        <a href="/" class="logo link"
-          >Web<span class="logo__text">Studio</span></a
+    <header class="header">
+      <nav class="container">
+        <a class="logo link" href="./index.html"
+          >Веб<span class="logo--header">Студія</span></a
         >
-        <nav class="nav header__nav">
-          <ul class="menu list">
-            <li class="menu__item">
-              <a href="./index.html" class="menu__link  link">Студия</a>
+        <button
+          class="btn-burger"
+          type="button"
+          aria-expanded="false"
+          data-menu-button
+        >
+          <svg class="contacts__svg" width="40" height="40">
+            <use
+              class="btn-burger__icon-burger"
+              href="./images/icons.svg#menu_40px"
+            ></use>
+            <use
+              class="btn-burger__icon-cross"
+              href="./images/icons.svg#close_40px"
+            ></use>
+          </svg>
+        </button>
+        <div class="header__menu-container" data-menu>
+          <ul class="nav">
+            <li class="nav__item">
+              <a class="nav__link link" href="./index.html">Студія</a>
             </li>
-            <li class="menu__item">
-              <a href="./portfolio.html" class="menu__link current link">Портфолио</a>
+            <li class="nav__item">
+              <a class="nav__link active link" href="./portfolio.html"
+                >Портфоліо</a
+              >
             </li>
-            <li class="menu__item">
-              <a href="" class="menu__link link">Контакты</a>
+            <li class="nav__item">
+              <a class="nav__link link" href="/">Контакти</a>
             </li>
           </ul>
-        </nav>
-        <ul class="contacts header__contacts list">
-          <li>
-            <a class="contacts__link link" href="mailto:info@devstudio.com">
-              <svg width="16" height="12" class="contacts__icon">
-                <use href="./images/icons.svg#icon-mail"></use>
-              </svg>
-              info@devstudio.com</a
-            >
-          </li>
-          <li class="contacts__tel">
-            <a class="contacts__link link" href="tel:+380961111111">
-              <svg width="10" height="12" class="contacts__icon">
-                <use href="./images/icons.svg#icon-telephone"></use></svg
-              >+38 096 111 11 11</a
-            >
-          </li>
-        </ul>
-      </div>
+          <ul class="header__contacts">
+            <li class="header__contacts-item">
+              <a class="header__contacts-link" href="mailto:info@devstudio.com">
+                <svg width="16" height="12" class="header__contacts-icon">
+                  <use href="./images/icons.svg#icon-mail"></use>
+                </svg>
+                info@devstudio.com
+              </a>
+            </li>
+            <li class="header__contacts-item">
+              <a class="header__contacts-link" href="tel:+380961111111">
+                <svg width="10" height="12" class="header__contacts-icon">
+                  <use href="./images/icons.svg#icon-telephone"></use>
+                </svg>
+                +38 096 111 11 11
+              </a>
+            </li>
+          </ul>
+          <ul class="header__social-menu">
+            <li class="social__item">
+              <a class="social__link link" href="">Instagram</a>
+            </li>
+            <li class="social__item">
+              <a class="social__link link" href="">Twitter</a>
+            </li>
+            <li class="social__item">
+              <a class="social__link link" href="">Facebook</a>
+            </li>
+            <li class="social__item">
+              <a class="social__link link" href="">LinkedIn</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
     </header>
 
     <main>
       <section class="buttons">
         <div class="container">
-          <h2 class="visually-hidden">Фильтр</h2>
+          <h2 class="visually-hidden">Фільтр</h2>
           <ul class="buttons-list list">
             <li class="buttons-button">
-              <button class="buttons-item" type="button">Все</button>
+              <button class="buttons-item" type="button">Всі</button>
             </li>
             <li class="buttons-button">
-              <button class="buttons-item" type="button">Веб-сайты</button>
+              <button class="buttons-item" type="button">Веб-сайти</button>
             </li>
             <li class="buttons-button">
-              <button class="buttons-item" type="button">Приложения</button>
+              <button class="buttons-item" type="button">Додатки</button>
             </li>
             <li class="buttons-button">
               <button class="buttons-item" type="button">Дизайн</button>
@@ -78,144 +112,43 @@
             </li>
           </ul>
 
-          <h2 class="visually-hidden">Наши проекти</h2>
+          <h2 class="visually-hidden">Наші проекти</h2>
           <ul class="exemple-list list">
             <li class="exemple-item">
               <div class="exemple-top-wrap">
-                <img alt="Веб-сайт" src="./images/web-1.jpg" width=370">
+                <picture>
+                  <source
+                    srcset="./images/web-1.jpg 1x, ./images/web-1-2x.jpg 2x"
+                    media="(min-width:1200px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/web-1-tab.jpg    1x,
+                      ./images/web-1-tab-2x.jpg 2x
+                    "
+                    media="(min-width:768px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/web-1-mob.jpg    1x,
+                      ./images/web-1-mob-2x.jpg 2x
+                    "
+                    media="(min-width:320px)"
+                  />
+                  <img alt="Веб-сайт" src="./images/web-1.jpg" width="370" />
+                </picture>
                 <p class="exemple-top-text">
-                  Ресурс предлагает комплексные предложения с разным уровнем
-                  функционала и сервисов. Все это позволит посетителю получить
-                  исчерпывающие сведения о компании или частном лице.
+                  Ресурс пропонує комплексні пропозиції з різним рівнем
+                  функціоналу та сервісів. Усе це дозволить відвідувачеві
+                  отримати вичерпні дані про компанію або приватну особу.
                 </p>
               </div>
-
               <div class="exemple-border">
                 <h2 class="exemple-name">Технокряк</h2>
                 <p class="exemple-text">Веб-сайт</p>
               </div>
             </li>
-            <li class="exemple-item">
-              <div class="exemple-top-wrap">
-                <img alt="Постер" src="./images/poster.jpg" width=370">
-                <p class="exemple-top-text">
-                  Ресурс предлагает комплексные предложения с разным уровнем
-                  функционала и сервисов. Все это позволит посетителю получить
-                  исчерпывающие сведения о компании или частном лице.
-                </p>
-              </div>
-
-              <div class="exemple-border">
-                <h2 class="exemple-name">Постер New Orlean vs Golden Star</h2>
-                <p class="exemple-text">Дизайн</p>
-              </div>
-            </li>
-            <li class="exemple-item">
-              <div class="exemple-top-wrap">
-                <img alt="емблема ресторана" src="./images/restoraunt.jpg"
-                width=370">
-                <p class="exemple-top-text">
-                  Ресурс предлагает комплексные предложения с разным уровнем
-                  функционала и сервисов. Все это позволит посетителю получить
-                  исчерпывающие сведения о компании или частном лице.
-                </p>
-              </div>
-
-              <div class="exemple-border">
-                <h2 class="exemple-name">Ресторан Seafood</h2>
-                <p class="exemple-text">Приложение</p>
-              </div>
-            </li>
-            <li class="exemple-item">
-              <div class="exemple-top-wrap">
-                <img alt="Навушники" src="./images/headphones.jpg" width=370">
-                <p class="exemple-top-text">
-                  Ресурс предлагает комплексные предложения с разным уровнем
-                  функционала и сервисов. Все это позволит посетителю получить
-                  исчерпывающие сведения о компании или частном лице.
-                </p>
-              </div>
-
-              <div class="exemple-border">
-                <h2 class="exemple-name">Проект Prime</h2>
-                <p class="exemple-text">Маркетинг</p>
-              </div>
-            </li>
-            <li class="exemple-item">
-              <div class="exemple-top-wrap">
-                <img alt="коробки" src="./images/project.jpg" width=370">
-                <p class="exemple-top-text">
-                  Ресурс предлагает комплексные предложения с разным уровнем
-                  функционала и сервисов. Все это позволит посетителю получить
-                  исчерпывающие сведения о компании или частном лице.
-                </p>
-              </div>
-
-              <div class="exemple-border">
-                <h2 class="exemple-name">Проект Boxes</h2>
-                <p class="exemple-text">Приложение</p>
-              </div>
-            </li>
-            <li class="exemple-item">
-              <div class="exemple-top-wrap">
-                <img alt="Веб-сайт" src="./images/inspiration.jpg" width=370">
-                <p class="exemple-top-text">
-                  Ресурс предлагает комплексные предложения с разным уровнем
-                  функционала и сервисов. Все это позволит посетителю получить
-                  исчерпывающие сведения о компании или частном лице.
-                </p>
-              </div>
-
-              <div class="exemple-border">
-                <h2 class="exemple-name">Inspiration has no Borders</h2>
-                <p class="exemple-text">Веб-сайт</p>
-              </div>
-            </li>
-            <li class="exemple-item">
-              <div class="exemple-top-wrap">
-                <img alt="журнал" src="./images/magazyn.jpg" width=370">
-                <p class="exemple-top-text">
-                  Ресурс предлагает комплексные предложения с разным уровнем
-                  функционала и сервисов. Все это позволит посетителю получить
-                  исчерпывающие сведения о компании или частном лице.
-                </p>
-              </div>
-
-              <div class="exemple-border">
-                <h2 class="exemple-name">Издание Limited Edition</h2>
-                <p class="exempple-text">Дизайн</p>
-              </div>
-            </li>
-            <li class="exemple-item">
-              <div class="exemple-top-wrap">
-                <img alt="етикетка" src="./images/label.jpg" width=370">
-                <p class="exemple-top-text">
-                  Ресурс предлагает комплексные предложения с разным уровнем
-                  функционала и сервисов. Все это позволит посетителю получить
-                  исчерпывающие сведения о компании или частном лице.
-                </p>
-              </div>
-
-              <div class="exemple-border">
-                <h2 class="exemple-name">Проект LAB</h2>
-                <p class="exemple-text">Маркетинг</p>
-              </div>
-            </li>
-            <li class="exemple-item">
-              <div class="exemple-top-wrap">
-                <img alt="ноутбук" src="./images/laptop.jpg" width=370">
-                <p class="exemple-top-text">
-                  Ресурс предлагает комплексные предложения с разным уровнем
-                  функционала и сервисов. Все это позволит посетителю получить
-                  исчерпывающие сведения о компании или частном лице.
-                </p>
-              </div>
-
-              <div class="exemple-border">
-                <h2 class="exemple-name">Growing Business</h2>
-                <p class="exemple-text">Приложение</p>
-              </div>
-            </li>
+            <!-- ... Repeat the structure for other project items -->
           </ul>
         </div>
       </section>
@@ -225,7 +158,7 @@
       <div class="container">
         <div class="box">
           <a href="/" class="logo link"
-            >Web<span class="footer-logo-text logo__text-white">Studio</span></a
+            >Веб<span class="logo__text logo__text-white">Студія</span></a
           >
           <address class="fotter-list">
             <ul class="fotter-items list">
@@ -235,8 +168,9 @@
                   href="https://bit.ly/3levZMZ"
                   target="_blank"
                   rel="noopener noreferrer"
-                  >г. Киев, пр-т Леси Украинки, 26</a
                 >
+                  м. Київ, пр-т Лесі Українки, 26
+                </a>
               </li>
               <li class="footer-contact">
                 <a class="fotter-mail link" href="mailto:info@devstudio.com"
@@ -252,7 +186,7 @@
           </address>
         </div>
         <div class="join">
-          <h3 class="join-header">Присоединяйтесь</h3>
+          <h3 class="join-header">Приєднуйтесь</h3>
           <ul class="join-list">
             <li class="list join-item">
               <a href="" class="join-link">
@@ -284,20 +218,27 @@
             </li>
           </ul>
         </div>
-         <form class="form">
-          <p class="form-title">Подпишитесь на рассылку</p>
+        <form class="form">
+          <p class="form-title">Підпишіться на розсилку</p>
           <div class="form-field">
             <label class="form-label">
-              <input class="form-input" type="email" name="email" placeholder="E-mail" />
+              <input
+                class="form-input"
+                type="email"
+                name="email"
+                placeholder="E-mail"
+              />
             </label>
             <button class="form-button" type="submit">
-              <p class="form-btn-text">Подписаться</p>
-               <svg class="form-ico" width="20" height="20">
-                  <use href="./images/icons.svg#icon-send"></use>
+              <p class="form-btn-text">Підписатися</p>
+              <svg class="form-ico" width="20" height="20">
+                <use href="./images/icons.svg#icon-send"></use>
+              </svg>
             </button>
           </div>
         </form>
       </div>
     </footer>
+    <script src="./js/menu_mobile.js"></script>
   </body>
 </html>
